@@ -1,0 +1,1 @@
+^XA^CI28^FX Second section with recipient address and permit information.^CF0,30^CF0,60^FO10,30^FDR^FS^BY2,2,50^FO46,30^BC^FO46,30^A0N,40,30^BC,,N^FD{barcode1}^FS^FO130,90^A0N,20,20^FD{barcode2}^FS^FS^CF0,34^FO80,165^FD{name}^FS^CF0,30^FO80,210^FD{address}^FS^FO80,240^FD{postcode} {city}^FS^XZ

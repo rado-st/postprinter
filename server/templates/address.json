@@ -1,0 +1,4 @@
+{
+  "size": "7x4cm",
+  "template": "^XA^CI28^FX Second section with recipient address and permit information.^CF0,30^CF0,60^FO80,30^FDR^FS^BY1,2,50^FO130,30^BC^FO130,30^BC,,N^FD{barcode}^FS^FO130,90^A0N,20,20^FD{barcode1}^FS^FS^CF0,34^FO80,165^FD{name}^FS^CF0,30^FO80,210^FD{address}^FS^FO80,240^FD{postcode} {city}^FS^XZ"
+}
