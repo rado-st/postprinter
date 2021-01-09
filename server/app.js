@@ -10,6 +10,8 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
+app.locals.printerAddressLabels = 'Honeywell_PC42d-203-FP'
+
 app.use(express.static('./../public'))
 
 app.post('/printAddressLabels', eSenderController.printAddressLabels)
