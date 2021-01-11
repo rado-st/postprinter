@@ -1,8 +1,8 @@
 const fs = require('fs')
 const child_process = require('child_process')
 
-const printAddressLabels = () => {
-  console.log('Hello there')
+const printAddressLabels = (random) => {
+  
 }
 
 
@@ -41,14 +41,13 @@ const createAddressLabel = async (req, res) => {
 
   fs.writeFile(`${random}.zpl`, addressUserTemplate, 'utf8', () => {
     console.log(`\n${random}.zpl was made\n`)
-
     fs.readFile(`${random}.zpl`, `utf8`, (err, data) =>{
       if(err){
         console.log('Server:', err)
         return
       }
       console.log(`checking saved address label ${data}`)
-
+  
       setTimeout(function() {
         child_process.exec(`lpr -P ${req.app.locals.printerAddressLabels} -o raw ${random}.zpl`,
           function(error, stdout, sterr){
@@ -57,7 +56,7 @@ const createAddressLabel = async (req, res) => {
           }
         )
       }, 3000)
-
+  
       setTimeout(function() {
         child_process.exec('find . -name "*.zpl" -type f -delete', function (error, stdout, stderr) {
           console.log('\nSERVER: deleted all zpl files\n')

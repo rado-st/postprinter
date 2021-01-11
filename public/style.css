@@ -1,8 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .form{
   display: flex;
   flex-direction: column;
+  padding-left: 1rem;
 }
 
 .form * {
   max-width: 300px;
+}
+
+.form label{
+  margin-top: 5px;
+}
+.form input{
+  padding: 10px;
+  border-radius: 0;
+}
+.form input:valid{
+  background-color: lightgreen;
+}
+
+.form input:invalid:focus{
+  background-color: red;
+}
+
+.form button{
+  margin-top: 10px;
+  border: 0;
+  padding: 10px;
+  background-color: seagreen;
+  color: white;
+  font-size: 28px;
 }
